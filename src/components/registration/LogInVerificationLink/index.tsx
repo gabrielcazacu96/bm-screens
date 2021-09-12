@@ -9,6 +9,7 @@ import styles from './index.module.scss';
 interface Props {
     className?: string;
     onLogin?: () => any;
+    resendEmailLink?: React.ReactNode;
 }
 
 const LoginVerificationLink: React.FC<Props> = (props) => {
@@ -17,6 +18,7 @@ const LoginVerificationLink: React.FC<Props> = (props) => {
         onLogin = () => {
             return alert("On Login")
         },
+        resendEmailLink = <a href="/resend-email">Didn't get an email?</a>
     } = props;
     const className = cx(styles.root, classNameProp);
 
@@ -25,11 +27,7 @@ const LoginVerificationLink: React.FC<Props> = (props) => {
             headerImageSrc={emailVerificationSentSvg}
             header='A verification link has been sent to your email account'
             subHeader='Please click on the link that has just been sent to your email account to verify your email and continue the registration process.'
-            footer={
-                <>
-                    <a href=""> Didn't get an email?</a>
-                </>
-            }
+            footer={resendEmailLink}
             className={className}
         >
 

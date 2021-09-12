@@ -10,6 +10,8 @@ interface Props {
     className?: string;
     onCreateAccount?: (values: { email: string, password: string, passwordConfirmation: string, acceptedTerms: boolean }) => any;
     onLinkedInLogin?: () => any;
+    termsAndConditionsLink?: React.ReactNode;
+    loginLink?: React.ReactNode;
 }
 
 const SignUpLanding: React.FC<Props> = (props) => {
@@ -20,7 +22,9 @@ const SignUpLanding: React.FC<Props> = (props) => {
         },
         onLinkedInLogin = () => {
             return alert("On LinkedIn login")
-        }
+        },
+        loginLink = <a href="/login">Login</a>,
+        termsAndConditionsLink = <a href="/terms-and-conditions">Terms and Conditions</a>,
     } = props;
     const className = cx(styles.root, classNameProp);
 
@@ -29,7 +33,7 @@ const SignUpLanding: React.FC<Props> = (props) => {
             header='Register'
             footer={
                 <>
-                    Already have an account? <a href="">Login</a>
+                    Already have an account? {loginLink}
                 </>
             }
             className={className}
@@ -38,7 +42,7 @@ const SignUpLanding: React.FC<Props> = (props) => {
 
             <span className={styles.root__or}>or</span>
 
-            <RegistrationForm onSubmit={onCreateAccount}/>
+            <RegistrationForm onSubmit={onCreateAccount} termsAndConditionsLink={termsAndConditionsLink}/>
         </ScreenLayout>
     );
 };

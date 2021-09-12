@@ -9,6 +9,7 @@ interface Props {
     className?: string;
     email: string;
     onEnterNewPassword?: () => any;
+    resendEmailLink?: React.ReactNode;
 }
 
 const LoginResetPassword: React.FC<Props> = (props) => {
@@ -18,6 +19,7 @@ const LoginResetPassword: React.FC<Props> = (props) => {
         onEnterNewPassword = () => {
             return alert("On enter new password")
         },
+        resendEmailLink = <a href="/resend-email">Didn't get an email?</a>
     } = props;
     const className = cx(styles.root, classNameProp);
 
@@ -26,14 +28,11 @@ const LoginResetPassword: React.FC<Props> = (props) => {
             header='Password sent'
             subHeader={
                 <p>
-                    An email has been sent to <b>{email}</b>. If this email adress is registered to Meteowrite.io, you’ll recieve instructions on how to set a new password.
+                    An email has been sent to <b>{email}</b>. If this email adress is registered to Meteowrite.io,
+                    you’ll recieve instructions on how to set a new password.
                 </p>
             }
-            footer={
-                <>
-                    <a href="">Didn't get an email?</a>
-                </>
-            }
+            footer={resendEmailLink}
             className={className}
         >
             <Button onClick={onEnterNewPassword}>

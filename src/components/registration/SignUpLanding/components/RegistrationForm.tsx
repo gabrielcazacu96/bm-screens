@@ -9,6 +9,7 @@ import styles from './RegistrationForm.module.scss';
 interface Props {
     className?: string;
     onSubmit: (values: { email: string, password: string, passwordConfirmation: string, acceptedTerms: boolean }) => any;
+    termsAndConditionsLink?: React.ReactNode;
 }
 
 const validationSchema = Yup.object({
@@ -24,7 +25,7 @@ const validationSchema = Yup.object({
 })
 
 const RegistrationForm: React.FC<Props> = (props) => {
-    const { className: classNameProp, onSubmit } = props;
+    const { className: classNameProp, termsAndConditionsLink, onSubmit } = props;
     const className = cx(styles.root, classNameProp);
 
     return (
@@ -60,7 +61,7 @@ const RegistrationForm: React.FC<Props> = (props) => {
                 />
                 <Checkbox name="acceptedTerms">
                     <span>
-                        I agree to the Meteowrite <a href="">Terms and Conditions</a>
+                        I agree to the Meteowrite {termsAndConditionsLink}
                     </span>
                 </Checkbox>
                 <ButtonSubmit>Create Account</ButtonSubmit>

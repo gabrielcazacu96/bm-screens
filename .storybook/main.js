@@ -10,5 +10,4 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/preset-create-react-app",
   ],
-  presets: [path.resolve(__dirname, './sass-preset.js')],
 }

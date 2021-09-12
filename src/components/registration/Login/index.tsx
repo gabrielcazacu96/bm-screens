@@ -10,6 +10,8 @@ interface Props {
     className?: string;
     onLogin?: (values: { email: string, password: string }) => any;
     onLinkedInLogin?: () => any;
+    registerLink?: React.ReactNode;
+    forgotPasswordLink?: React.ReactNode;
 }
 
 const Login: React.FC<Props> = (props) => {
@@ -20,7 +22,9 @@ const Login: React.FC<Props> = (props) => {
         },
         onLinkedInLogin = () => {
             return alert("On LinkedIn login")
-        }
+        },
+        registerLink = <a href="/register">Register</a>,
+        forgotPasswordLink = <a href="/forgot-password">Forgot password?</a>,
     } = props;
     const className = cx(styles.root, classNameProp);
 
@@ -29,7 +33,7 @@ const Login: React.FC<Props> = (props) => {
             header='Login'
             footer={
                 <>
-                    New to meteowrite? <a href="">Register</a>
+                    New to meteowrite? {registerLink}
                 </>
             }
             className={className}
@@ -38,7 +42,7 @@ const Login: React.FC<Props> = (props) => {
 
             <span className={styles.root__or}>or</span>
 
-            <LoginForm onSubmit={onLogin}/>
+            <LoginForm onSubmit={onLogin} forgotPasswordLink={forgotPasswordLink}/>
         </ScreenLayout>
     );
 };

@@ -33,9 +33,16 @@ const SignUpLandingTemplate: ComponentStory<typeof SignUpLanding> = (args) => <S
 export const SignUpLandingSimple = SignUpLandingTemplate.bind({});
 
 LoginSimple.args = {
-    className: '',
-    onLogin: (values: any) => {
-        return alert(`On Login: ${JSON.stringify(values)}`)
+    onLogin: async (values: any) => {
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(values)
+        };
+
+        const response = await (await fetch('https://reqres.in/api/login', requestOptions)).json()
+
+        return alert(`On Login: ${JSON.stringify(values)} | response: ${JSON.stringify(response)}`)
     },
     onLinkedInLogin: () => {
         return alert("On Linked In login")
@@ -43,7 +50,6 @@ LoginSimple.args = {
 };
 
 LoginPasswordSendSimple.args = {
-    className: '',
     email: 'user@example.com',
     onEnterNewPassword: () => {
         return alert("On Enter New Password")
@@ -51,28 +57,24 @@ LoginPasswordSendSimple.args = {
 };
 
 LoginResetPasswordSimple.args = {
-    className: '',
     onResetPassword: () => {
         return alert("On Reset Password")
     },
 };
 
 LoginVerificationLinkSimple.args = {
-    className: '',
     onLogin: () => {
         return alert("On Login")
     },
 };
 
 SignUpBasicInfoSimple.args = {
-    className: '',
     onSignUp: (values: any) => {
         return alert(`On Sign Up: ${JSON.stringify(values)}`)
     },
 };
 
 SignUpLandingSimple.args = {
-    className: '',
     onCreateAccount: (values: any) => {
         return alert(`On Create Account: ${JSON.stringify(values)}`)
     },

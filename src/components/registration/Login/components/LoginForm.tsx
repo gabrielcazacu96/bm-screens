@@ -9,6 +9,7 @@ import styles from './LoginForm.module.scss';
 interface Props {
     className?: string;
     onSubmit: (values: { email: string, password: string, rememberMe: boolean }) => any;
+    forgotPasswordLink: React.ReactNode;
 }
 
 const validationSchema = Yup.object({
@@ -20,7 +21,7 @@ const validationSchema = Yup.object({
 })
 
 const LoginForm: React.FC<Props> = (props) => {
-    const { className: classNameProp, onSubmit } = props;
+    const { className: classNameProp, onSubmit, forgotPasswordLink } = props;
     const className = cx(styles.root, classNameProp);
 
     return (
@@ -54,7 +55,7 @@ const LoginForm: React.FC<Props> = (props) => {
                             Remember me
                         </span>
                         <span>
-                            <a href="">Forgot password?</a>
+                            {forgotPasswordLink}
                         </span>
                     </span>
                 </Checkbox>

@@ -9,6 +9,7 @@ interface Props {
     className?: string;
     onResetPassword?: (values: { email: string }) => any;
     onLinkedInLogin?: () => any;
+    loginLink?: React.ReactNode;
 }
 
 const LoginResetPassword: React.FC<Props> = (props) => {
@@ -17,6 +18,7 @@ const LoginResetPassword: React.FC<Props> = (props) => {
         onResetPassword = (values) => {
             return alert(JSON.stringify(values))
         },
+        loginLink = <a href="/login">Go back</a>
     } = props;
     const className = cx(styles.root, classNameProp);
 
@@ -26,7 +28,7 @@ const LoginResetPassword: React.FC<Props> = (props) => {
             subHeader='Enter your Meteowrite.io email adress so we can reset your password.'
             footer={
                 <>
-                    Remember password? <a href="">Go back</a>
+                    Remember password? {loginLink}
                 </>
             }
             className={className}
