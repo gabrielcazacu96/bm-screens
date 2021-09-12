@@ -7,8 +7,8 @@
   background: #FFFFFF 0 0 no-repeat padding-box;
   border: 1px solid #E8E9FC;
   border-radius: 5px;
-  padding-top: 60px;
-  padding-bottom: 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   &__content {
     width: 316px;
@@ -27,10 +27,15 @@
 
   &__header {
     text-align: center;
-    font: normal normal bold 24px/33px Avenir Next;
+    font: normal normal 500 23px/33px Avenir Next;
     letter-spacing: 0;
     color: $color-ink;
     padding: 10px;
+  }
+
+  &__header-image {
+    max-width: 204px;
+    max-height: 204px;
   }
 
   &__sub-header {
@@ -38,5 +43,13 @@
     font: normal normal normal 14px/22px Avenir Next;
     letter-spacing: 0;
     color: #1A1A1A;
+  }
+
+  &__footer {
+    margin-top: 32px;
+    text-align: center;
+    font: normal normal normal 14px/19px Avenir Next;
+    letter-spacing: 0;
+    color: $color-ink;
   }
 }

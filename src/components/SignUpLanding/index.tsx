@@ -27,6 +27,11 @@ const SignUpLanding: React.FC<Props> = (props) => {
     return (
         <ScreenLayout
             header='Register'
+            footer={
+                <>
+                    Already have an account? <a href="">Login</a>
+                </>
+            }
             className={className}
         >
             <ButtonLinkedIn onClick={onLinkedInLogIn}/>
@@ -34,10 +39,6 @@ const SignUpLanding: React.FC<Props> = (props) => {
             <span className={styles.root__or}>or</span>
 
             <RegistrationForm onSubmit={onCreateAccount}/>
-
-            <span className={styles.root__footer}>
-                Already have an account? <a href="">Login</a>
-            </span>
         </ScreenLayout>
     );
 };

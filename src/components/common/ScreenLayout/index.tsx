@@ -5,14 +5,16 @@ import Logo from '../Logo';
 import styles from './index.module.scss';
 
 interface Props {
-    className?: String;
-    header?: String | React.ReactNode;
-    subHeader?: String | React.ReactNode;
+    className?: string;
+    headerImageSrc?: string;
+    header?: string | React.ReactNode;
+    subHeader?: string | React.ReactNode;
+    footer?: string | React.ReactNode;
     children?: React.ReactNode;
 }
 
 const ScreenLayout: React.FC<Props> = (props) => {
-    const { className: classNameProp, header, subHeader, children } = props;
+    const { className: classNameProp, headerImageSrc, header, subHeader, footer, children } = props;
     const className = cx(styles.root, classNameProp);
 
     return (
@@ -20,6 +22,9 @@ const ScreenLayout: React.FC<Props> = (props) => {
             <div className={styles.root__content}>
                 <div className={styles['root__header-wrapper']}>
                     <Logo/>
+                    {
+                        headerImageSrc && <img src={headerImageSrc} className={styles['root__header-image']} alt="header" />
+                    }
                     <div className={styles.root__header}>
                         {header}
                     </div>
@@ -28,6 +33,10 @@ const ScreenLayout: React.FC<Props> = (props) => {
                     </div>
                 </div>
                 {children}
+
+                <span className={styles.root__footer}>
+                    {footer}
+                </span>
             </div>
         </div>
     );
