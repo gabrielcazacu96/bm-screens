@@ -1,0 +1,23 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 316px;
+  height: 48px;
+  background: $color-star-field 0 0 no-repeat padding-box;
+  border: none;
+  text-align: left;
+  font: normal normal bold 12px/16px Avenir Next;
+  letter-spacing: 1.2px;
+  color: $color-white;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-star-field-dark 0 0 no-repeat padding-box;
+  }
+
+  &__icon {
+    margin-right: 8px;
+  }
+}

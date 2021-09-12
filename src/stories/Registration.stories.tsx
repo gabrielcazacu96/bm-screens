@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Registration } from '../components';
+import { Registration } from 'components';
 
 export default {
   title: 'Screens/Registration',

@@ -1,0 +1,35 @@
+.root {
+  width: 314px;
+
+  input {
+    display: none;
+  }
+
+  label {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font: normal normal normal 14px/20px Avenir Next;
+    letter-spacing: 0;
+  }
+
+  &__value {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 32px;
+    border: 1px solid $color-lighter-dust;
+    border-radius: 5px;
+    font: normal normal 400 12px/16px Avenir Next;
+    letter-spacing: 1.2px;
+    color: $color-space-ink;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &__error {
+    border: 1px solid $color-error;
+  }
+}

@@ -1,0 +1,37 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  border: 1px solid $color-lighter-dust;
+  border-radius: 5px;
+  padding: 10px 16px;
+  cursor: text;
+
+  &__error {
+    border: 1px solid $color-error;
+  }
+
+  label {
+    cursor: text;
+    text-align: left;
+    font: normal normal 400 10px/14px Avenir;
+    letter-spacing: 1px;
+    color: $color-space-ink;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+
+  input {
+    border: none;
+    text-align: left;
+    font: normal normal normal 14px/19px Avenir Next;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+}

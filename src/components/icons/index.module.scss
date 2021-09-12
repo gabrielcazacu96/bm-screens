@@ -1,0 +1,14 @@
+.icon {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  user-select: none;
+  fill: currentColor;
+  width: 1.7em;
+  height: 1.7em;
+
+  &.cc--inline {
+    display: inline-block;
+  }
+}

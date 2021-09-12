@@ -1,0 +1,17 @@
+.root {
+  &__or {
+    text-align: center;
+    font: normal normal 500 16px/22px Avenir Next;
+    letter-spacing: 0;
+    color: $color-ink;
+    padding: 20px;
+  }
+
+  &__footer {
+    margin-top: 16px;
+    text-align: right;
+    font: normal normal normal 14px/19px Avenir Next;
+    letter-spacing: 0;
+    color: $color-ink;
+  }
+}
