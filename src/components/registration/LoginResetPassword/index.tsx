@@ -8,7 +8,7 @@ import styles from './index.module.scss';
 interface Props {
     className?: string;
     onResetPassword?: (values: { email: string }) => any;
-    onLinkedInLogIn?: () => any;
+    onLinkedInLogin?: () => any;
 }
 
 const LoginResetPassword: React.FC<Props> = (props) => {

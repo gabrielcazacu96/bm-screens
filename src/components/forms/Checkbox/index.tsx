@@ -27,7 +27,7 @@ const Checkbox: React.FC<Props> = (props) => {
     return (
         <div className={className}>
             <input ref={inputRef} {...field} {...rest} type="checkbox"/>
-            <label htmlFor={rest.id || rest.name}>
+            <label htmlFor={rest.name}>
                 <span onClick={handleClick} className={valueClassName}>
                     {field.checked ? "Yes" : "No"}
                 </span>

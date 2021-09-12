@@ -1,6 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 
+import logoSvg from 'assets/logo.svg';
 import styles from './index.module.scss'
 
 interface Props {
@@ -12,7 +13,7 @@ const Logo: React.FC<Props> = (props) => {
     const className = cx(styles.root, classNameProp);
 
     return (
-        <div className={className}>meteowrite</div>
+        <img src={logoSvg} className={className} alt="logo"/>
     );
 };
 

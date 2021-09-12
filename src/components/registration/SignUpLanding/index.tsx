@@ -9,7 +9,7 @@ import styles from './index.module.scss';
 interface Props {
     className?: string;
     onCreateAccount?: (values: { email: string, password: string, passwordConfirmation: string, acceptedTerms: boolean }) => any;
-    onLinkedInLogIn?: () => any;
+    onLinkedInLogin?: () => any;
 }
 
 const SignUpLanding: React.FC<Props> = (props) => {
@@ -18,7 +18,7 @@ const SignUpLanding: React.FC<Props> = (props) => {
         onCreateAccount = (values) => {
             return alert(JSON.stringify(values))
         },
-        onLinkedInLogIn = () => {
+        onLinkedInLogin = () => {
             return alert("On LinkedIn login")
         }
     } = props;
@@ -34,7 +34,7 @@ const SignUpLanding: React.FC<Props> = (props) => {
             }
             className={className}
         >
-            <ButtonLinkedIn onClick={onLinkedInLogIn}/>
+            <ButtonLinkedIn onClick={onLinkedInLogin}/>
 
             <span className={styles.root__or}>or</span>
 

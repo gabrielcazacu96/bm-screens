@@ -8,14 +8,14 @@ import styles from './index.module.scss';
 
 interface Props {
     className?: string;
-    onLogIn?: () => any;
+    onLogin?: () => any;
 }
 
 const LoginVerificationLink: React.FC<Props> = (props) => {
     const {
         className: classNameProp,
-        onLogIn = () => {
-            return alert("On login")
+        onLogin = () => {
+            return alert("On Login")
         },
     } = props;
     const className = cx(styles.root, classNameProp);
@@ -33,7 +33,7 @@ const LoginVerificationLink: React.FC<Props> = (props) => {
             className={className}
         >
 
-            <Button onClick={onLogIn}>Log In</Button>
+            <Button onClick={onLogin}>Log In</Button>
         </ScreenLayout>
     );
 };

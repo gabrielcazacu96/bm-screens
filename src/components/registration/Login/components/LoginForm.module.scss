@@ -1,0 +1,21 @@
+.root {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  button {
+    margin-top: 16px;
+  }
+
+  & > div {
+    margin-bottom: 16px;
+  }
+}
+
+.checkbox-label {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-grow: 1;
+}

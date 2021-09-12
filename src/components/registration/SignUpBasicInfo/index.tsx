@@ -8,7 +8,7 @@ import styles from './index.module.scss';
 interface Props {
     className?: string;
     onSignUp?: (values: { firstName: string, lastName: string, company: string, companyRole: string }) => any;
-    onLinkedInLogIn?: () => any;
+    onLinkedInLogin?: () => any;
 }
 
 const SignUpBasicInfo: React.FC<Props> = (props) => {

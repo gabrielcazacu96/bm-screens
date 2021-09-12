@@ -1,3 +1,4 @@
+export { default as Login } from './Login';
 export { default as LoginPasswordSend } from './LoginPasswordSent';
 export { default as LoginResetPassword } from './LoginResetPassword';
 export { default as LoginVerificationLink } from './LogInVerificationLink';
