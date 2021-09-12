@@ -8,9 +8,20 @@ import styles from './index.module.scss';
 
 interface Props {
     className?: String;
+    onCreateAccount?: (values: { email: string, password: string, passwordConfirmation: string, acceptedTerms: boolean }) => any;
+    onLinkedInLogIn?: () => any;
 }
 
-const Registration: React.FC<Props> = ({ className: classNameProp }) => {
+const SignUpLanding: React.FC<Props> = (props) => {
+    const {
+        className: classNameProp,
+        onCreateAccount = (values) => {
+            return alert(JSON.stringify(values))
+        },
+        onLinkedInLogIn = () => {
+            return alert("On LinkedIn login")
+        }
+    } = props;
     const className = cx(styles.root, classNameProp);
 
     return (
@@ -18,11 +29,11 @@ const Registration: React.FC<Props> = ({ className: classNameProp }) => {
             header='Register'
             className={className}
         >
-            <ButtonLinkedIn/>
+            <ButtonLinkedIn onClick={onLinkedInLogIn}/>
 
             <span className={styles.root__or}>or</span>
 
-            <RegistrationForm/>
+            <RegistrationForm onSubmit={onCreateAccount}/>
 
             <span className={styles.root__footer}>
                 Already have an account? <a href="">Login</a>
@@ -31,4 +42,4 @@ const Registration: React.FC<Props> = ({ className: classNameProp }) => {
     );
 };
 
-export default Registration;
+export default SignUpLanding;

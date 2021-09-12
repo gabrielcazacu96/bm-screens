@@ -1,1 +1,2 @@
-export { default as Registration } from './Registration';
+export { default as SignUpLanding } from './SignUpLanding';
+export { default as SignUpBasicInfo } from './SignUpBasicInfo';

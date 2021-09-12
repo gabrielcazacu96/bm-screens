@@ -12,6 +12,7 @@ interface Props {
     type?: "button" | "submit" | "reset" | undefined;
     icon?: React.FC<IconProps>;
     children?: ReactNode | string;
+    onClick?: () => any;
 }
 
 const Button: React.FC<Props> = (props) => {

@@ -8,6 +8,7 @@ import styles from './RegistrationForm.module.scss';
 
 interface Props {
     className?: String;
+    onSubmit: (values: { email: string, password: string, passwordConfirmation: string, acceptedTerms: boolean }) => any;
 }
 
 const validationSchema = Yup.object({
@@ -22,7 +23,8 @@ const validationSchema = Yup.object({
         .oneOf([ true ], "You must accept the terms and conditions."),
 })
 
-const RegistrationForm: React.FC<Props> = ({ className: classNameProp }) => {
+const RegistrationForm: React.FC<Props> = (props) => {
+    const { className: classNameProp, onSubmit } = props;
     const className = cx(styles.root, classNameProp);
 
     return (
@@ -35,7 +37,7 @@ const RegistrationForm: React.FC<Props> = ({ className: classNameProp }) => {
             }}
             validationSchema={validationSchema}
             onSubmit={async (values, { setSubmitting }) => {
-                await new Promise(r => setTimeout(r, 500));
+                await Promise.resolve(onSubmit(values))
                 setSubmitting(false);
             }}
         >
@@ -61,7 +63,6 @@ const RegistrationForm: React.FC<Props> = ({ className: classNameProp }) => {
                         I agree to the Meteowrite <a href="">Terms and Conditions</a>
                     </span>
                 </Checkbox>
-
                 <ButtonSubmit>Create Account</ButtonSubmit>
             </Form>
         </Formik>

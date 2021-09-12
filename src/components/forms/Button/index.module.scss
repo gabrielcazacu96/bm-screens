@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 316px;
+  min-width: 100px;
   height: 48px;
   background: $color-star-field 0 0 no-repeat padding-box;
   border: none;

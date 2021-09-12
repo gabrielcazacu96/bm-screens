@@ -17,12 +17,18 @@ const ScreenLayout: React.FC<Props> = (props) => {
 
     return (
         <div className={className}>
-            <div className={styles['root__header-wrapper']}>
-                <Logo/>
-                {header}
-                {subHeader}
+            <div className={styles.root__content}>
+                <div className={styles['root__header-wrapper']}>
+                    <Logo/>
+                    <div className={styles.root__header}>
+                        {header}
+                    </div>
+                    <div className={styles['root__sub-header']}>
+                        {subHeader}
+                    </div>
+                </div>
+                {children}
             </div>
-            {children}
         </div>
     );
 };
