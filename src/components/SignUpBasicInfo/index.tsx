@@ -6,7 +6,7 @@ import { BasicInfoForm } from './components';
 import styles from './index.module.scss';
 
 interface Props {
-    className?: String;
+    className?: string;
     onSignUp?: (values: { firstName: string, lastName: string, company: string, companyRole: string }) => any;
     onLinkedInLogIn?: () => any;
 }

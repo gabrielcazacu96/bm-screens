@@ -2,12 +2,12 @@ import React from 'react';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import cx from 'classnames';
-import { ButtonSubmit, TextInput } from 'components/forms';
 
+import { ButtonSubmit, TextInput } from 'components/forms';
 import styles from './BasicInfoForm.module.scss';
 
 interface Props {
-    className?: String;
+    className?: string;
     onSubmit: (values: { firstName: string, lastName: string, company: string, companyRole: string }) => any;
 }
 

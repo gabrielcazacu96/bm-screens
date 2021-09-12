@@ -7,7 +7,7 @@ import { Button } from 'components/forms';
 import styles from './index.module.scss';
 
 interface Props {
-    className?: String;
+    className?: string;
     onLogIn?: () => any;
 }
 

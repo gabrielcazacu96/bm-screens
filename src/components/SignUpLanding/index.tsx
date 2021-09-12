@@ -7,7 +7,7 @@ import { ButtonLinkedIn } from 'components/forms';
 import styles from './index.module.scss';
 
 interface Props {
-    className?: String;
+    className?: string;
     onCreateAccount?: (values: { email: string, password: string, passwordConfirmation: string, acceptedTerms: boolean }) => any;
     onLinkedInLogIn?: () => any;
 }

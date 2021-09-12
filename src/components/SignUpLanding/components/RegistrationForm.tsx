@@ -2,12 +2,12 @@ import React from 'react';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import cx from 'classnames';
-import { Checkbox, ButtonSubmit, TextInput } from 'components/forms';
 
+import { Checkbox, ButtonSubmit, TextInput } from 'components/forms';
 import styles from './RegistrationForm.module.scss';
 
 interface Props {
-    className?: String;
+    className?: string;
     onSubmit: (values: { email: string, password: string, passwordConfirmation: string, acceptedTerms: boolean }) => any;
 }
 

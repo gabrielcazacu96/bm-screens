@@ -23,14 +23,15 @@ const ScreenLayout: React.FC<Props> = (props) => {
                 <div className={styles['root__header-wrapper']}>
                     <Logo/>
                     {
-                        headerImageSrc && <img src={headerImageSrc} className={styles['root__header-image']} alt="header" />
+                        headerImageSrc &&
+                        <img src={headerImageSrc} className={styles['root__header-image']} alt="header"/>
                     }
-                    <div className={styles.root__header}>
+                    <span className={styles.root__header}>
                         {header}
-                    </div>
-                    <div className={styles['root__sub-header']}>
+                    </span>
+                    <span className={styles['root__sub-header']}>
                         {subHeader}
-                    </div>
+                    </span>
                 </div>
                 {children}
 
