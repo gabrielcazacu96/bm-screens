@@ -7,44 +7,50 @@ import { ButtonLinkedIn } from 'components/forms';
 import styles from './index.module.scss';
 
 interface Props {
-    className?: string;
-    onCreateAccount?: (values: { email: string, password: string, passwordConfirmation: string, acceptedTerms: boolean }) => any;
-    onLinkedInLogin?: () => any;
-    termsAndConditionsLink?: React.ReactNode;
-    loginLink?: React.ReactNode;
+  className?: string;
+  onCreateAccount?: (values: {
+    email: string;
+    password: string;
+    passwordConfirmation: string;
+    acceptedTerms: boolean;
+  }) => void;
+  onLinkedInLogin?: () => void;
+  termsAndConditionsLink?: React.ReactNode;
+  loginLink?: React.ReactNode;
 }
 
 const SignUpLanding: React.FC<Props> = (props) => {
-    const {
-        className: classNameProp,
-        onCreateAccount = (values) => {
-            return alert(JSON.stringify(values))
-        },
-        onLinkedInLogin = () => {
-            return alert("On LinkedIn login")
-        },
-        loginLink = <a href="/login">Login</a>,
-        termsAndConditionsLink = <a href="/terms-and-conditions">Terms and Conditions</a>,
-    } = props;
-    const className = cx(styles.root, classNameProp);
+  const {
+    className: classNameProp,
+    onCreateAccount = (values) => {
+      return alert(JSON.stringify(values));
+    },
+    onLinkedInLogin = () => {
+      return alert('On LinkedIn login');
+    },
+    loginLink = <a href="/login">Login</a>,
+    termsAndConditionsLink = (
+      <a href="/terms-and-conditions">Terms and Conditions</a>
+    ),
+  } = props;
+  const className = cx(styles.root, classNameProp);
 
-    return (
-        <ScreenLayout
-            header='Register'
-            footer={
-                <>
-                    Already have an account? {loginLink}
-                </>
-            }
-            className={className}
-        >
-            <ButtonLinkedIn onClick={onLinkedInLogin}/>
+  return (
+    <ScreenLayout
+      header="Register"
+      footer={<>Already have an account? {loginLink}</>}
+      className={className}
+    >
+      <ButtonLinkedIn onClick={onLinkedInLogin} />
 
-            <span className={styles.root__or}>or</span>
+      <span className={styles.root__or}>or</span>
 
-            <RegistrationForm onSubmit={onCreateAccount} termsAndConditionsLink={termsAndConditionsLink}/>
-        </ScreenLayout>
-    );
+      <RegistrationForm
+        onSubmit={onCreateAccount}
+        termsAndConditionsLink={termsAndConditionsLink}
+      />
+    </ScreenLayout>
+  );
 };
 
 export default SignUpLanding;

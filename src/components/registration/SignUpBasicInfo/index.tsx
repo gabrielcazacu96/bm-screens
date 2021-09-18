@@ -6,29 +6,34 @@ import { BasicInfoForm } from './components';
 import styles from './index.module.scss';
 
 interface Props {
-    className?: string;
-    onSignUp?: (values: { firstName: string, lastName: string, company: string, companyRole: string }) => any;
-    onLinkedInLogin?: () => any;
+  className?: string;
+  onSignUp?: (values: {
+    firstName: string;
+    lastName: string;
+    company: string;
+    companyRole: string;
+  }) => void;
+  onLinkedInLogin?: () => void;
 }
 
 const SignUpBasicInfo: React.FC<Props> = (props) => {
-    const {
-        className: classNameProp,
-        onSignUp = (values) => {
-            return alert(JSON.stringify(values))
-        },
-    } = props;
-    const className = cx(styles.root, classNameProp);
+  const {
+    className: classNameProp,
+    onSignUp = (values) => {
+      return alert(JSON.stringify(values));
+    },
+  } = props;
+  const className = cx(styles.root, classNameProp);
 
-    return (
-        <ScreenLayout
-            header='Basic information'
-            subHeader='This is a placeholder description of why we need to know this type of information'
-            className={className}
-        >
-            <BasicInfoForm onSubmit={onSignUp}/>
-        </ScreenLayout>
-    );
+  return (
+    <ScreenLayout
+      header="Basic information"
+      subHeader="This is a placeholder description of why we need to know this type of information"
+      className={className}
+    >
+      <BasicInfoForm onSubmit={onSignUp} />
+    </ScreenLayout>
+  );
 };
 
 export default SignUpBasicInfo;

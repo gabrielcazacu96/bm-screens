@@ -1,144 +1,143 @@
 @font-face {
-  font-family: 'Avenir-Black';
-  src: url('./avenir/Avenir-Black.eot');
-  src: url('./avenir/Avenir-Black.woff2') format('woff2'),
-  url('./avenir/Avenir-Black.woff') format('woff'),
-  url('./avenir/Avenir-Black.ttf') format('truetype'),
-  url('./avenir/Avenir-Black.svg#Avenir-Black') format('svg'),
-  url('./avenir/Avenir-Black.eot?#iefix') format('embedded-opentype');
+  font-family: "Avenir-Black";
+  src: url("./avenir/Avenir-Black.eot");
+  src: url("./avenir/Avenir-Black.woff2") format("woff2"),
+    url("./avenir/Avenir-Black.woff") format("woff"),
+    url("./avenir/Avenir-Black.ttf") format("truetype"),
+    url("./avenir/Avenir-Black.svg#Avenir-Black") format("svg"),
+    url("./avenir/Avenir-Black.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir-BlackOblique';
-  src: url('./avenir/Avenir-BlackOblique.eot');
-  src: url('./avenir/Avenir-BlackOblique.woff2') format('woff2'),
-  url('./avenir/Avenir-BlackOblique.woff') format('woff'),
-  url('./avenir/Avenir-BlackOblique.ttf') format('truetype'),
-  url('./avenir/Avenir-BlackOblique.svg#Avenir-BlackOblique') format('svg'),
-  url('./avenir/Avenir-BlackOblique.eot?#iefix') format('embedded-opentype');
+  font-family: "Avenir-BlackOblique";
+  src: url("./avenir/Avenir-BlackOblique.eot");
+  src: url("./avenir/Avenir-BlackOblique.woff2") format("woff2"),
+    url("./avenir/Avenir-BlackOblique.woff") format("woff"),
+    url("./avenir/Avenir-BlackOblique.ttf") format("truetype"),
+    url("./avenir/Avenir-BlackOblique.svg#Avenir-BlackOblique") format("svg"),
+    url("./avenir/Avenir-BlackOblique.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir-Book';
-  src: url('./avenir/Avenir-Book.eot');
-  src: url('./avenir/Avenir-Book.woff2') format('woff2'),
-  url('./avenir/Avenir-Book.woff') format('woff'),
-  url('./avenir/Avenir-Book.ttf') format('truetype'),
-  url('./avenir/Avenir-Book.svg#Avenir-Book') format('svg'),
-  url('./avenir/Avenir-Book.eot?#iefix') format('embedded-opentype');
+  font-family: "Avenir-Book";
+  src: url("./avenir/Avenir-Book.eot");
+  src: url("./avenir/Avenir-Book.woff2") format("woff2"),
+    url("./avenir/Avenir-Book.woff") format("woff"),
+    url("./avenir/Avenir-Book.ttf") format("truetype"),
+    url("./avenir/Avenir-Book.svg#Avenir-Book") format("svg"),
+    url("./avenir/Avenir-Book.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir-BookOblique';
-  src: url('./avenir/Avenir-BookOblique.eot');
-  src: url('./avenir/Avenir-BookOblique.woff2') format('woff2'),
-  url('./avenir/Avenir-BookOblique.woff') format('woff'),
-  url('./avenir/Avenir-BookOblique.ttf') format('truetype'),
-  url('./avenir/Avenir-BookOblique.svg#Avenir-BookOblique') format('svg'),
-  url('./avenir/Avenir-BookOblique.eot?#iefix') format('embedded-opentype');
+  font-family: "Avenir-BookOblique";
+  src: url("./avenir/Avenir-BookOblique.eot");
+  src: url("./avenir/Avenir-BookOblique.woff2") format("woff2"),
+    url("./avenir/Avenir-BookOblique.woff") format("woff"),
+    url("./avenir/Avenir-BookOblique.ttf") format("truetype"),
+    url("./avenir/Avenir-BookOblique.svg#Avenir-BookOblique") format("svg"),
+    url("./avenir/Avenir-BookOblique.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir-Heavy';
-  src: url('./avenir/Avenir-Heavy.eot');
-  src: url('./avenir/Avenir-Heavy.woff2') format('woff2'),
-  url('./avenir/Avenir-Heavy.woff') format('woff'),
-  url('./avenir/Avenir-Heavy.ttf') format('truetype'),
-  url('./avenir/Avenir-Heavy.svg#Avenir-Heavy') format('svg'),
-  url('./avenir/Avenir-Heavy.eot?#iefix') format('embedded-opentype');
+  font-family: "Avenir-Heavy";
+  src: url("./avenir/Avenir-Heavy.eot");
+  src: url("./avenir/Avenir-Heavy.woff2") format("woff2"),
+    url("./avenir/Avenir-Heavy.woff") format("woff"),
+    url("./avenir/Avenir-Heavy.ttf") format("truetype"),
+    url("./avenir/Avenir-Heavy.svg#Avenir-Heavy") format("svg"),
+    url("./avenir/Avenir-Heavy.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir-HeavyOblique';
-  src: url('./avenir/Avenir-HeavyOblique.eot');
-  src: url('./avenir/Avenir-HeavyOblique.woff2') format('woff2'),
-  url('./avenir/Avenir-HeavyOblique.woff') format('woff'),
-  url('./avenir/Avenir-HeavyOblique.ttf') format('truetype'),
-  url('./avenir/Avenir-HeavyOblique.svg#Avenir-HeavyOblique') format('svg'),
-  url('./avenir/Avenir-HeavyOblique.eot?#iefix') format('embedded-opentype');
+  font-family: "Avenir-HeavyOblique";
+  src: url("./avenir/Avenir-HeavyOblique.eot");
+  src: url("./avenir/Avenir-HeavyOblique.woff2") format("woff2"),
+    url("./avenir/Avenir-HeavyOblique.woff") format("woff"),
+    url("./avenir/Avenir-HeavyOblique.ttf") format("truetype"),
+    url("./avenir/Avenir-HeavyOblique.svg#Avenir-HeavyOblique") format("svg"),
+    url("./avenir/Avenir-HeavyOblique.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir-Light';
-  src: url('./avenir/Avenir-Light.eot');
-  src: url('./avenir/Avenir-Light.woff2') format('woff2'),
-  url('./avenir/Avenir-Light.woff') format('woff'),
-  url('./avenir/Avenir-Light.ttf') format('truetype'),
-  url('./avenir/Avenir-Light.svg#Avenir-Light') format('svg'),
-  url('./avenir/Avenir-Light.eot?#iefix') format('embedded-opentype');
+  font-family: "Avenir-Light";
+  src: url("./avenir/Avenir-Light.eot");
+  src: url("./avenir/Avenir-Light.woff2") format("woff2"),
+    url("./avenir/Avenir-Light.woff") format("woff"),
+    url("./avenir/Avenir-Light.ttf") format("truetype"),
+    url("./avenir/Avenir-Light.svg#Avenir-Light") format("svg"),
+    url("./avenir/Avenir-Light.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir-LightOblique';
-  src: url('./avenir/Avenir-LightOblique.eot');
-  src: url('./avenir/Avenir-LightOblique.woff2') format('woff2'),
-  url('./avenir/Avenir-LightOblique.woff') format('woff'),
-  url('./avenir/Avenir-LightOblique.ttf') format('truetype'),
-  url('./avenir/Avenir-LightOblique.svg#Avenir-LightOblique') format('svg'),
-  url('./avenir/Avenir-LightOblique.eot?#iefix') format('embedded-opentype');
+  font-family: "Avenir-LightOblique";
+  src: url("./avenir/Avenir-LightOblique.eot");
+  src: url("./avenir/Avenir-LightOblique.woff2") format("woff2"),
+    url("./avenir/Avenir-LightOblique.woff") format("woff"),
+    url("./avenir/Avenir-LightOblique.ttf") format("truetype"),
+    url("./avenir/Avenir-LightOblique.svg#Avenir-LightOblique") format("svg"),
+    url("./avenir/Avenir-LightOblique.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir-Medium';
-  src: url('./avenir/Avenir-Medium.eot');
-  src: url('./avenir/Avenir-Medium.woff2') format('woff2'),
-  url('./avenir/Avenir-Medium.woff') format('woff'),
-  url('./avenir/Avenir-Medium.ttf') format('truetype'),
-  url('./avenir/Avenir-Medium.svg#Avenir-Medium') format('svg'),
-  url('./avenir/Avenir-Medium.eot?#iefix') format('embedded-opentype');
+  font-family: "Avenir-Medium";
+  src: url("./avenir/Avenir-Medium.eot");
+  src: url("./avenir/Avenir-Medium.woff2") format("woff2"),
+    url("./avenir/Avenir-Medium.woff") format("woff"),
+    url("./avenir/Avenir-Medium.ttf") format("truetype"),
+    url("./avenir/Avenir-Medium.svg#Avenir-Medium") format("svg"),
+    url("./avenir/Avenir-Medium.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir-MediumOblique';
-  src: url('./avenir/Avenir-MediumOblique.eot');
-  src: url('./avenir/Avenir-MediumOblique.woff2') format('woff2'),
-  url('./avenir/Avenir-MediumOblique.woff') format('woff'),
-  url('./avenir/Avenir-MediumOblique.ttf') format('truetype'),
-  url('./avenir/Avenir-MediumOblique.svg#Avenir-MediumOblique') format('svg'),
-  url('./avenir/Avenir-MediumOblique.eot?#iefix') format('embedded-opentype');
+  font-family: "Avenir-MediumOblique";
+  src: url("./avenir/Avenir-MediumOblique.eot");
+  src: url("./avenir/Avenir-MediumOblique.woff2") format("woff2"),
+    url("./avenir/Avenir-MediumOblique.woff") format("woff"),
+    url("./avenir/Avenir-MediumOblique.ttf") format("truetype"),
+    url("./avenir/Avenir-MediumOblique.svg#Avenir-MediumOblique") format("svg"),
+    url("./avenir/Avenir-MediumOblique.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir-Oblique';
-  src: url('./avenir/Avenir-Oblique.eot');
-  src: url('./avenir/Avenir-Oblique.woff2') format('woff2'),
-  url('./avenir/Avenir-Oblique.woff') format('woff'),
-  url('./avenir/Avenir-Oblique.ttf') format('truetype'),
-  url('./avenir/Avenir-Oblique.svg#Avenir-Oblique') format('svg'),
-  url('./avenir/Avenir-Oblique.eot?#iefix') format('embedded-opentype');
+  font-family: "Avenir-Oblique";
+  src: url("./avenir/Avenir-Oblique.eot");
+  src: url("./avenir/Avenir-Oblique.woff2") format("woff2"),
+    url("./avenir/Avenir-Oblique.woff") format("woff"),
+    url("./avenir/Avenir-Oblique.ttf") format("truetype"),
+    url("./avenir/Avenir-Oblique.svg#Avenir-Oblique") format("svg"),
+    url("./avenir/Avenir-Oblique.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir-Roman';
-  src: url('./avenir/Avenir-Roman.eot');
-  src: url('./avenir/Avenir-Roman.woff2') format('woff2'),
-  url('./avenir/Avenir-Roman.woff') format('woff'),
-  url('./avenir/Avenir-Roman.ttf') format('truetype'),
-  url('./avenir/Avenir-Roman.svg#Avenir-Roman') format('svg'),
-  url('./avenir/Avenir-Roman.eot?#iefix') format('embedded-opentype');
+  font-family: "Avenir-Roman";
+  src: url("./avenir/Avenir-Roman.eot");
+  src: url("./avenir/Avenir-Roman.woff2") format("woff2"),
+    url("./avenir/Avenir-Roman.woff") format("woff"),
+    url("./avenir/Avenir-Roman.ttf") format("truetype"),
+    url("./avenir/Avenir-Roman.svg#Avenir-Roman") format("svg"),
+    url("./avenir/Avenir-Roman.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
-

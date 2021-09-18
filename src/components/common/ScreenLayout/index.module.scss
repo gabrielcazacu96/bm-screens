@@ -1,4 +1,4 @@
-@import 'styles/shared';
+@import "styles/shared";
 
 .root {
   display: flex;
@@ -6,8 +6,8 @@
   align-items: center;
   width: 460px;
   min-height: 300px;
-  background: #FFFFFF 0 0 no-repeat padding-box;
-  border: 1px solid #E8E9FC;
+  background: #ffffff 0 0 no-repeat padding-box;
+  border: 1px solid #e8e9fc;
   border-radius: 5px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -44,7 +44,7 @@
     text-align: center;
     font: normal normal normal 14px/22px Avenir Next;
     letter-spacing: 0;
-    color: #1A1A1A;
+    color: #1a1a1a;
   }
 
   &__footer {

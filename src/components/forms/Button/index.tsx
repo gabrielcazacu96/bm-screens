@@ -4,38 +4,36 @@ import cx from 'classnames';
 import styles from './index.module.scss';
 
 interface IconProps {
-    className?: string;
+  className?: string;
 }
 
 interface Props {
-    className?: string;
-    type?: "button" | "submit" | "reset" | undefined;
-    icon?: React.FC<IconProps>;
-    children?: ReactNode | string;
-    onClick?: () => any;
+  className?: string;
+  type?: 'button' | 'submit' | 'reset' | undefined;
+  icon?: React.FC<IconProps>;
+  children?: ReactNode | string;
+  onClick?: () => void;
 }
 
 const Button: React.FC<Props> = (props) => {
-    const { children, type = 'button', className: classNameProp, icon: Icon, ...rest } = props;
-    const withIcon = !!Icon;
-    const className = cx(
-        styles.root,
-        classNameProp,
-    );
+  const {
+    children,
+    type = 'button',
+    className: classNameProp,
+    icon: Icon,
+    ...rest
+  } = props;
+  const withIcon = !!Icon;
+  const className = cx(styles.root, classNameProp);
 
-    return (
-        <button
-            className={className}
-            type={type}
-            {...rest}
-        >
-            <>
-                {withIcon && <Icon className={styles.root__icon}/>}
-                {children}
-            </>
-
-        </button>
-    );
+  return (
+    <button className={className} type={type} {...rest}>
+      <>
+        {withIcon && <Icon className={styles.root__icon} />}
+        {children}
+      </>
+    </button>
+  );
 };
 
 export default Button;
